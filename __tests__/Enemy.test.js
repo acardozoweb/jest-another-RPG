@@ -49,11 +49,11 @@ test("subtracts from enemy's health", () => {
   const enemy = new Enemy('goblin', 'sword');
   const oldHealth = enemy.health;
 
-  enemy.reducedHealth(5);
+  enemy.reduceHealth(5);
 
   expect(enemy.health).toBe(oldHealth - 5);
 
-  enemy.reducedHealth(99999);
+  enemy.reduceHealth(99999);
 
   expect(enemy.health).toBe(0);
 });
